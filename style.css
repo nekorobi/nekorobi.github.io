@@ -124,8 +124,8 @@ nav ul li a:hover::after{
 }
 
 @keyframes typing {
-  0%{width:0;opacity: 0;}
-  10%{width: 0;opacity: 1;}
+  0%{width:0;opacity: 1;}
+  40%{width: 0;opacity: 1;}
 }
 @keyframes blink-caret { 50% {border-color: transparent;}}
 
