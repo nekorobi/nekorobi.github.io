@@ -116,8 +116,7 @@ nav ul li a:hover::after{
 
 @keyframes slideIn{
      from{
-          0%{width:0;opacity: 1;}
-          25%{width: 0;opacity: 1;}
+
      }
      to{
           transform: translateX(0);
