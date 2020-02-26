@@ -127,11 +127,20 @@ nav ul li a:hover::after{
 @keyframes blink-caret { 50% {border-color: transparent;}}
 
 .keyword{
+     position: relative;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     -webkit-transform : translate(-50%,-50%);
+     transform : translate(-50%,-50%);
+     width: 100px;
+     text-align: center;
+     font: bold 1000% Consolas, Monaco, monospace;
      border-right: .1em solid;
      width: 16.5em;
-     width: 30ch;
-     margin: 2em 1em;
+     width: 22ch;
+     color: white;
      white-space: nowrap;
      overflow: hidden;
-     animation: typing 20s steps(30, end), blink-caret .5s step-end infinite alternate;
+     animation: typing 3s steps(22, end), blink-caret .4s step-end infinite alternate;
 }
