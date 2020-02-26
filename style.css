@@ -6,7 +6,8 @@
 
 html{
      font-size: 10px;
-     font-family: "Roboto Cn", sans-serif;
+     /*font-family: "Roboto Cn", sans-serif;*/
+     font: Consolas, Monaco, monospace;
 }
 
 body{
@@ -43,7 +44,11 @@ nav{
      font-size: 3rem;
      font-weight: 300;
      transform: translateX(-100rem);
-     animation: slideIn .5s forwards;
+     animation: slideIn 1.0s forwards;
+}
+
+h1.nekorobi{
+     animation-delay: 0.5s;
 }
 
 nav ul{
@@ -53,27 +58,27 @@ nav ul{
 nav ul li{
      list-style: none;
      transform: translateX(100rem);
-     animation: slideIn 0.6s forwards;
+     animation: slideIn 1.0s forwards;
 }
 
 nav ul li:nth-child(1){
-     animation-delay: 0s;
-}
-
-nav ul li:nth-child(2){
-     animation-delay: 0.3s;
-}
-
-nav ul li:nth-child(3){
      animation-delay: 0.55s;
 }
 
-nav ul li:nth-child(4){
+nav ul li:nth-child(2){
      animation-delay: 0.75s;
 }
 
-nav ul li:nth-child(5){
+nav ul li:nth-child(3){
      animation-delay: 0.90s;
+}
+
+nav ul li:nth-child(4){
+     animation-delay: 1.00s;
+}
+
+nav ul li:nth-child(5){
+     animation-delay: 1.05s;
 }
 
 nav ul li a{
@@ -116,7 +121,6 @@ nav ul li a:hover::after{
 
 @keyframes slideIn{
      from{
-          animation-delay: 5s;
      }
      to{
           transform: translateX(0);
