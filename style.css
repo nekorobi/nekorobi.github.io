@@ -123,7 +123,10 @@ nav ul li a:hover::after{
      }
 }
 
-@keyframes typing { from {width: 0;}}
+@keyframes typing {
+  0%{width:0;opacity: 0;}
+  10%{width: 0;opacity: 1;}
+}
 @keyframes blink-caret { 50% {border-color: transparent;}}
 
 .keyword{
@@ -142,5 +145,5 @@ nav ul li a:hover::after{
      color: white;
      white-space: nowrap;
      overflow: hidden;
-     animation: typing 3s 0.5s steps(25, end), blink-caret .4s step-end infinite;
+     animation: typing 3s steps(25, end), blink-caret .4s step-end infinite;
 }
