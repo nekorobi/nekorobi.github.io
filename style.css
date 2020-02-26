@@ -135,12 +135,13 @@ nav ul li a:hover::after{
      transform : translate(-50%,-50%);
      width: 100px;
      text-align: center;
-     font: bold 1000% Consolas, Monaco, monospace;
+     font: bold 100% Consolas, Monaco, monospace;
+     font-size: 5vmax;
      border-right: .1em solid;
      width: 16.5em;
-     width: 22ch;
+     width: 23ch;
      color: white;
      white-space: nowrap;
      overflow: hidden;
-     animation: typing 3s steps(22, end), blink-caret .4s step-end infinite alternate;
+     animation: typing 3s steps(23, end), blink-caret .4s step-end infinite alternate;
 }
