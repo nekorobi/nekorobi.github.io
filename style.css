@@ -116,7 +116,7 @@ nav ul li a:hover::after{
 
 @keyframes slideIn{
      from{
-
+          animation-delay: 5s;
      }
      to{
           transform: translateX(0);
