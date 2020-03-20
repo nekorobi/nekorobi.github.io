@@ -8,6 +8,7 @@
   --green:#19FF26;
   --orange:#FF8519;
   --ink_blue:#000e14;
+  --ink_blue_alpha:#000e1480;
 }
 
 *{
@@ -17,7 +18,7 @@
 }
 
 html{
-     font-size: 12px;
+     font-size: 15px;
      font: Consolas, Monaco, monospace;
      color: white;
 }
@@ -33,11 +34,11 @@ a{
 
 header{
      width: 100%;
-     height: 100vh;
+     /* height: 100vh; */
 }
 
 body{
-      background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(images/Nekorobi_Logo_tmp.png) center no-repeat;
+      background:  linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)) no-repeat fixed,url(images/Nekorobi_Logo_tmp.png) center no-repeat fixed;
       background-size: cover;
 }
 
@@ -112,10 +113,11 @@ nav ul li:nth-child(6){
 }
 
 nav ul li a{
-     padding: 1rem 0 0.8rem;
-     margin: 0 3rem;
+     padding: 1rem 5px 0.8rem;
+     margin: 0 1rem;
      position: relative;
      letter-spacing: 2px;
+     background-color: var(--ink_blue_alpha);
 }
 
 nav ul li a:last-child{
