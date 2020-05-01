@@ -1,3 +1,16 @@
+/* *{
+  margin-top : 0px;
+  margin-left : 0px;
+  margin-right : 0px;
+  margin-bottom : 0px;
+
+  padding-top : 0px;
+  padding-left : 0px;
+  padding-right : 0px;
+  padding-bottom : 0px;
+
+} */
+
 :root{
   /* Colors */
   --orange:#f05500;
@@ -11,4 +24,44 @@
 
 html{
   font-size: 20px;
+  color: var(--ink_blue);
+}
+
+header{
+  text-align: center;
+}
+
+nav{
+  text-align: center;
+}
+nav ul{
+  padding-left: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li{
+  margin: 0px;
+  padding: 0px;
+  padding: 10px 10px;
+  margin: 2.5px;
+  text-align: center;
+}
+nav ul li a:link{
+  color: var(--ink_blue);
+}
+nav ul li a:hover,a:active{
+  color: var(--orange)
+}
+nav ul li a:visited{
+  color: var(--purple);
+}
+
+main {
+  text-align: center;
+}
+
+
+footer{
+  text-align: center;
 }
