@@ -1,12 +1,19 @@
 :root{
   /* Colors */
+  --orange:#f05500;
+  --green:#00ef1c;
+  --skyblue:#00f0c6;
+  --blue:#0071f0;
+  --purple:#c600f0;
+
+/*
   --red:#FF1919;
   --pink:#FF198A;
   --aqua:#19FFF8;
   --yellow:#FFCD19;
   --blue:#1970FF;
   --green:#19FF26;
-  --orange:#FF8519;
+  --orange:#FF8519; */
   --ink_blue:#000e14;
   --ink_blue_alpha:#000e1480;
 }
@@ -130,7 +137,7 @@ nav ul li a::after{
      position: absolute;
      width: 100%;
      height: 3px;
-     background-color:var(--red);
+     background-color:var(--orange);
      left: 0;
      transform: scaleX(0);
      transition: all .5s;
