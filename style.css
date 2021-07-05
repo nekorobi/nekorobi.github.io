@@ -1,0 +1,64 @@
+/* 確認用 */
+main .member{
+  /* background-color: red; */
+}
+
+
+/* カスタムカラーテーマ */
+:root{
+  --background-color:#3F4551;
+  --header-background-color:#000E14;
+  --default-text-color:var(--header-background-color);
+  --content-background-color:#E1F6FF;
+  --mokume-theme-color:#00f0c6;
+  --yu762-theme-color:#f05500;
+  --guri-theme-color:#00ef1c;
+  --jiro-theme-color:#c600f0;
+  --nafu-theme-color:#0071f0;
+}
+
+body{
+  background-color: var(--background-color);
+  color: var(--default-text-color);
+}
+
+/* ここからheader部分 */
+header{
+  background-color: var(--header-background-color);
+}
+
+header .menu_list{
+  list-style: none;
+  /* リスト全体を中央揃え */
+  text-align: center;
+  /* inline-blockで要素ごとにスキマを開けないため必須 */
+  font-size: 0px;
+  margin: 0px;
+}
+
+header .menu_list li{
+  width: 140px;
+  font-size: 20px;
+  /* リスト内テキストを中央揃え */
+  text-align: center;
+  background-color: var(--content-background-color);
+  display: inline-block;
+  padding: 5px;  /*文字周辺の空白*/
+  margin: 10px;   /*要素周辺の余白*/
+}
+
+header .menu_list li a{
+  /* リンクに装飾をしない */
+  text-decoration: none;
+}
+
+/* ここからmain部分 */
+main{
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .content{
+  background-color: var(--content-background-color);
+}
