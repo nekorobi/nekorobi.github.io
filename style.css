@@ -3,22 +3,32 @@ main .member{
   /* background-color: red; */
 }
 
-/* カスタムカラーテーマ */
+/* カスタムテーマ */
 :root{
   --background-color:#3F4551;
-  --header-background-color:#000E14;
-  --default-text-color:var(--header-background-color);
-  --content-background-color:#E1F6FF;
+  --header-background-color:rgba(0,14,20,0.75);
+  --header-text-color:#E1F6FF;
+  --default-text-color:#000E14;
+  --box-background-color:var(--default-text-color);
+  --shadow-color:var(--default-text-color);
+  --content-background-color:rgb(225,246,255,0.75);
   --mokume-theme-color:#00f0c6;
   --yu762-theme-color:#f05500;
   --guri-theme-color:#00ef1c;
   --jiro-theme-color:#c600f0;
   --nafu-theme-color:#0071f0;
+  --title:"Bebas Neue";
+  --text:"Noto Sans JP";
 }
 
 body{
-  background-color: var(--background-color);
+  background-image: url(images/Nekorobi_logo_tmp.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--default-text-color);
+  font-family: var(--text)
 }
 
 /* ここからheader部分 */
@@ -35,29 +45,82 @@ header .menu_list{
   margin: 0px;
 }
 
-header .menu_list li{
+header .menu_list a{
   width: 140px;
-  font-size: 30px;
+  font-size: 35px;
   /* リスト内テキストを中央揃え */
   text-align: center;
   display: inline-block;
   padding: 5px;  /*文字周辺の空白*/
   margin: 10px;   /*要素周辺の余白*/
-}
-
-header .menu_list li a{
-  /* リンクに装飾をしない */
-  text-decoration: none;
-  color: var(--content-background-color)
+    /* リンクに装飾をしない */
+    text-decoration: none;
+    color: var(--header-text-color);
+    font-family: var(--title);
+    letter-spacing: 2px;
 }
 
 /* ここからmain部分 */
 main{
-  max-width: 750px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
 main .content{
   background-color: var(--content-background-color);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px var(--box-background-color);
 }
+
+main h2{
+  margin-top: 0px;
+  text-align: center;
+  font-family: var(--title);
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+main #menu_works{
+  height: 500px;
+}
+
+main #member_list img{
+  width: 100px;
+  margin: -10px;
+}
+
+main #member_list{
+  text-align: center;
+}
+
+main .member_box{
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  height: 200px;
+  margin: 5px;
+  padding: 5px;
+  vertical-align: top;
+  background-color: var(--content-background-color);
+  border-radius: 5px;
+}
+
+#member_list h3{
+  font-weight: medium;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: -5px;
+  padding-bottom: 3px;
+  box-shadow: 0px 0px 5px var(--box-background-color);
+  background-color: var(--box-background-color);
+}
+
+#mokume h3{color: var(--mokume-theme-color);}
+#yu762 h3{color: var(--yu762-theme-color);}
+#guri h3{color: var(--guri-theme-color);}
+#jiro h3{color: var(--jiro-theme-color);}
+#nafu h3{color: var(--nafu-theme-color);}
