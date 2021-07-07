@@ -61,20 +61,3 @@ main{
 main .content{
   background-color: var(--content-background-color);
 }
-
-main #menu_members ul{
-  list-style: none;
-}
-
-main #menu_members li{
-  background-color: var(--background-color);
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  padding: 5px;
-  margin: 10px;
-}
-
-main #menu_members img{
-  width: 100px;
-}
