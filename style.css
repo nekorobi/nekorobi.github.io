@@ -3,7 +3,6 @@ main .member{
   /* background-color: red; */
 }
 
-
 /* カスタムカラーテーマ */
 :root{
   --background-color:#3F4551;
@@ -38,10 +37,9 @@ header .menu_list{
 
 header .menu_list li{
   width: 140px;
-  font-size: 20px;
+  font-size: 30px;
   /* リスト内テキストを中央揃え */
   text-align: center;
-  background-color: var(--content-background-color);
   display: inline-block;
   padding: 5px;  /*文字周辺の空白*/
   margin: 10px;   /*要素周辺の余白*/
@@ -50,6 +48,7 @@ header .menu_list li{
 header .menu_list li a{
   /* リンクに装飾をしない */
   text-decoration: none;
+  color: var(--content-background-color)
 }
 
 /* ここからmain部分 */
@@ -61,4 +60,21 @@ main{
 
 main .content{
   background-color: var(--content-background-color);
+}
+
+main #menu_members ul{
+  list-style: none;
+}
+
+main #menu_members li{
+  background-color: var(--background-color);
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+  margin: 10px;
+}
+
+main #menu_members img{
+  width: 100px;
 }
