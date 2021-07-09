@@ -49,11 +49,11 @@ header .menu_list a{
   display: inline-block;
   padding: 5px;  /*文字周辺の空白*/
   margin: 10px;   /*要素周辺の余白*/
-    /* リンクに装飾をしない */
-    text-decoration: none;
-    color: var(--header-text-color);
-    font-family: var(--title);
-    letter-spacing: 2px;
+  /* リンクに装飾をしない */
+  text-decoration: none;
+  color: var(--header-text-color);
+  font-family: var(--title);
+  letter-spacing: 2px;
 }
 
 /* ここからmain部分 */
@@ -78,6 +78,10 @@ main h2{
   font-family: var(--title);
   font-size: 30px;
   letter-spacing: 2px;
+}
+
+main #menu_about{
+  height: 500px;
 }
 
 main #menu_works{
