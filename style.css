@@ -6,7 +6,7 @@
   --default-text-color:#000E14;
   --box-background-color:var(--default-text-color);
   --shadow-color:var(--default-text-color);
-  --content-background-color:rgb(225,246,255,0.75);
+  --content-background-color:rgba(225,246,255,0.75);
   --mokume-theme-color:#00F0C6;
   --yu762-theme-color:#F05500;
   --guri-theme-color:#00EF1C;
@@ -17,20 +17,33 @@
   --text:"Noto Sans JP";
 }
 
+html{
+  /* スクロールを滑らかにする */
+  scroll-behavior: smooth;
+}
+
 body{
-  background-image: url("images/NKRBlogo.png");
+  /* 背景画像の設定 */
+  background-image: url("images/NKRBlogo.svg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  /* ページ内デフォルトフォントの設定 */
   color: var(--default-text-color);
   font-family: var(--text);
+  /* テキスト選択を無効に */
+  -webkit-user-select:none;
 }
 
 /* ここからheader部分 */
 header{
   background-color: var(--header-background-color);
-  margin-top: -10px;
+  width: 100%;
+  height: 80px;
+  transform: translate(0px,-20px);
+  /* position: fixed; 上部固定しようとしたが不具合*/
+  z-index: 9999;
 }
 
 header .menu_list{
@@ -55,6 +68,11 @@ header .menu_list a{
   color: var(--header-text-color);
   font-family: var(--title);
   letter-spacing: 2px;
+  transition: letter-spacing 0.2s;
+}
+
+header .menu_list a:hover{
+  letter-spacing: 1px;
 }
 
 /* ここからmain部分 */
@@ -107,14 +125,21 @@ main #menu_about{
     text-shadow: 0px 0px 20px var(--box-background-color);
   }
   100%{
-    text-shadow: 0px 0px 50px var(--header-text-color);
+    text-shadow: 0px 0px 50px var(--box-background-color);
   }
 }
 
-#menu_about .description p{
-    width: 75%;
+#menu_about .description{
+    width: 85%;
     height: 220px;
     margin: 10px auto;
+    background-color: var(--content-background-color);
+    box-shadow: 0px 0px 10px var(--content-background-color);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main #menu_works{
@@ -175,6 +200,11 @@ main .member_links a{
   font-size: 10pt;
   text-decoration: none;
   color: mediumblue;
+  transition: transform 0.5s;
+}
+
+main .member_links a:hover{
+  transform: scale(1.1);
 }
 
 main .member_links a[target="_blank"]{
