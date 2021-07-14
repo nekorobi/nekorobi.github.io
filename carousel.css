@@ -4,7 +4,7 @@
     padding: 0 20px;
 }
  
-/*カーセルスライドの画像表示部分*/
+/*カーセルスライドの表示部分*/
 .carousel {
     display: block;
     text-align: left;
@@ -132,7 +132,7 @@
     overflow-y: scroll;
 }
   
-/*カルーセルスライダーのサムネイルの設定*/
+/*カルーセルスライドのサムネイルの表示部分*/
 .carousel__thumbnails {
     list-style: none;
     padding: 0;
