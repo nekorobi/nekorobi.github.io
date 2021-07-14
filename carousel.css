@@ -3,8 +3,8 @@
     margin: 0 auto;
     padding: 0 20px;
 }
- 
-/*カーセルスライドの表示部分*/
+
+/*カルーセルスライドの表示部分*/
 .carousel {
     display: block;
     text-align: left;
@@ -73,7 +73,7 @@
     box-sizing: border-box;
     display: flex;
 }
-  
+
 .carousel__slide {
     position: relative;
     display: block;
@@ -131,7 +131,7 @@
 .carousel__slide.scrollable {
     overflow-y: scroll;
 }
-  
+
 /*カルーセルスライドのサムネイルの表示部分*/
 .carousel__thumbnails {
     list-style: none;
