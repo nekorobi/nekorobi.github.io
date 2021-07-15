@@ -121,12 +121,6 @@
     min-width: 150px;
 }
 
-/*作者の表示(ここは非表示にしてもいいかも)*/
-.carousel__slide .credit {
-    margin-top: 1rem;
-    color: rgba(0, 0, 0, 0.5);
-    display: block;
-}
 .carousel__slide.scrollable {
     overflow-y: scroll;
 }
