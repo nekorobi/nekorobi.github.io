@@ -1,6 +1,5 @@
 /* カスタムテーマ */
 :root{
-  --background-color:#3F4551;
   --header-background-color:rgba(0,14,20,0.75);
   --header-text-color:#E1F6FF;
   --default-text-color:#000E14;
@@ -102,6 +101,11 @@ main h2{
 
 main #menu_about{
   height: 500px;
+  background-color: var(--header-background-color);
+}
+
+main #menu_about h2{
+  color: var(--header-text-color);
 }
 
 /* キャッチコピーの部分 */
@@ -123,10 +127,10 @@ main #menu_about{
 
 @keyframes  catch{
   0%{
-    text-shadow: 0px 0px 20px var(--box-background-color);
+    text-shadow: 0px 0px 20px var(--header-text-color);
   }
   100%{
-    text-shadow: 0px 0px 50px var(--box-background-color);
+    text-shadow: 0px 0px 50px var(--header-text-color);
   }
 }
 
