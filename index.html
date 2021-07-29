@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>NKRB</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="carousel.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue" rel="stylesheet">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <header>
+    <!-- <img> -->
+    <div class="menu_list">
+      <a href="#menu_about">About</a>
+      <a href="#menu_works">Works</a>
+      <a href="#menu_members">Members</a>
+      <!-- <a href="#menu_links">Links</a> -->
+    </div>
+  </header>
+  <main>
+    <div class="content" id="menu_about">
+      <h2>About</h2>
+      <div class="catch">
+        <p>NKRBは世界とワクワクを共有します</p>
+      </div>
+      <div class="description">
+        <p>NKRB（ネコロビ）は<br>
+          「想像するだけでワクワクするようなものを創造し共有する」<br>
+          を理念とした有志のサークルです<br><br>
+          メンバー個人が「面白そう！」と思ったアイデアを互いに支援することで達成し<br>
+          アイデアからできあがったモノを世界に解き放ちます
+        </p>
+      </div>
+    </div>
+    <div class="content" id="menu_works">
+      <h2>Works</h2>
+      <section>
+        <div class="container">
+          <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <ul class="carousel__slides">
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="images/ComingSoon.png">
+                    <!-- 画像サイズは400px 300pxとする -->
+                  </div>
+                  <figcaption>
+                    <h3>ゆっくり情報工学</h3>
+                    <p>
+                      情報工学の基礎を中心にゆっくり音声で解説します<br>
+                      2021年8月中には1本目の動画をYoutubeにて公開予定<br>
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="images/ComingSoon.png">
+                  </div>
+                  <figcaption>
+                    <h3>ゲームレビュー</h3>
+                    <p>
+                      Steamのキュレーション機能を利用してゲーム紹介を行います<br>
+                      2021年9月中公開開始予定<br>
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="images/ComingSoon.png">
+                  </div>
+                  <figcaption>
+                    <h3>ゲーム開発</h3>
+                    <p>
+                      ゲームは遊ぶだけでなく作るもの<br>
+                      ぼんやりしたアイデアがいくつかあるだけの状態です<br>
+                      開始時期・詳細未定<br>
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="images/ComingSoon.png">
+                  </div>
+                  <figcaption>
+                    <h3>アプリケーション開発</h3>
+                    <p>
+                      Android,iOS上で動作するスマホアプリケーションを開発します<br>
+                      アイデアコンテストなどで発表したりしたものを作る予定です<br>
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="images/ComingSoon.png">
+                  </div>
+                  <figcaption>
+                    <h3>電子工作</h3>
+                    <p>
+                      ArduinoやRaspberry Piを使ってガジェットを作ります<br>
+                      ほとんど趣味レベルですが動画とかで紹介するかもしれません<br>
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="images/SleepyCat.png">
+                  </div>
+                  <figcaption>
+                    <h3>Sleepy Cat</h3>
+                    <p>
+                      完全なる内輪向けのコミュニティ<br>
+                      SlackBOTとか作ってる<br>
+                      Since 2018/9/25<br>
+                    </p>
+
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <ul class="carousel__thumbnails">
+              <li>
+                <label for="slide-1"><img src="images/ComingSoon.png"></label>
+              </li>
+              <li>
+                <label for="slide-2"><img src="images/ComingSoon.png"></label>
+              </li>
+              <li>
+                <label for="slide-3"><img src="images/ComingSoon.png"></label>
+              </li>
+              <li>
+                <label for="slide-4"><img src="images/ComingSoon.png"></label>
+              </li>
+              <li>
+                <label for="slide-5"><img src="images/ComingSoon.png"></label>
+              </li>
+              <li>
+                <label for="slide-6"><img src="images/SleepyCat.png"></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="content" id="menu_members">
+      <h2>Members</h2>
+      <div id="member_list">
+        <div class="member_box" id="mokume">
+          <h3>Mokume</h3>
+          <img src="images/icons/Pixie2.png">
+          <div class="self_intro">
+            "木目壱心"が正式名称です<br>
+            SF小説とインディーゲームが主食です<br>
+            <div class="member_links">
+              <a href="https://twitter.com/Mokume1Shine" target="_blank">Twitter</a>
+              <a href="https://www.youtube.com/channel/UC0wBELuVlX1FbfpFRK8XoXg" target="_blank">Youtube</a>
+              <a href="https://steamcommunity.com/id/mokume1shine/" target="_blank">Steam</a>
+            </div>
+          </div>
+        </div>
+        <div class="member_box" id="yu762">
+          <h3>Yu762</h3>
+          <img src="images/icons/yu762.png">
+          <p>
+            レトロゲーとインフラ大好きマン
+            <div class="member_links">
+            </div>
+          </p>
+        </div>
+        <div class="member_box" id="guri">
+          <h3>guri</h3>
+          <img src="images/icons/gissy.png">
+          <div class="self_intro">
+            基本インドア，たまにアクティブ<br>
+            ゲームは好きです大好物 (好みはあるけど)
+            <div class="member_links">
+              <a href="https://twitter.com/guri_ni_asu" target="_blank">Twitter</a>
+              <a href="https://www.youtube.com/channel/UCM1VDkI02dK0BV-e8nyYobQ" target="_blank">Youtube</a>
+              <a href="https://steamcommunity.com/profiles/76561198321248378/" target="_blank">Steam</a>
+            </div>
+          </div>
+        </div>
+        <div class="member_box" id="jiro">
+          <h3>Jiro</h3>
+          <img src="images/icons/jiro.jpg">
+          <div class="self_intro">
+            パソコン全般的に苦手MAN
+            <div class="member_links">
+            </div>
+          </div>
+        </div>
+        <div class="member_box" id="nafu">
+          <h3>Nafu</h3>
+          <img src="images/icons/Nafu.png">
+          <div class="self_intro">
+            読書とゲームと音楽は最強の娯楽
+            <div class="member_links">
+            </div>
+          </div>
+        </div>
+        <div class="member_box" id="okayu">
+          <h3>Okayu</h3>
+          <img src="images/icons/okayu.png">
+          <div class="self_intro">
+            "真面目に不真面目"が今のモットー<br>
+            "カッコいい"は正義だと思っています
+            <div class="member_links">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="content" id="menu_links">
+      <h2>Links</h2>
+      <p>リンクをいろいろ書いてね．</p>
+    </div> -->
+  </main>
+  <footer>
+    <!-- リンク集をここにおいてもいいかもしれない-->
+    <!-- <a href="#" id="page-top" style="text-decoration: none;"><i class="blogicon-chevron-up"></i>∧___∧<br>
+      |・ㅅ・| < ﾆｬﾝ<br>
+      |<span style="margin-left: 20px;margin-right : 20px;"> T</span>|<br>
+      |⊃ O⊂|<br>
+      |<span style="margin-left: 20px;margin-right : 20px;"> P</span>|<br>
+      </a> -->
+  </footer>
+</body>
+</html>
